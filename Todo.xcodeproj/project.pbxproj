@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527669431FDAFBE800C2CC67 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527669421FDAFBE800C2CC67 /* DataManager.swift */; };
+		52F47BE91FDAD09D0071C790 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F47BE81FDAD09D0071C790 /* TodoItem.swift */; };
+		52F47BEB1FDAD1650071C790 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F47BEA1FDAD1650071C790 /* TodoTableViewController.swift */; };
 		52F83E871FDACC21003041D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F83E861FDACC21003041D3 /* AppDelegate.swift */; };
-		52F83E891FDACC21003041D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F83E881FDACC21003041D3 /* ViewController.swift */; };
 		52F83E8C1FDACC21003041D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F83E8A1FDACC21003041D3 /* Main.storyboard */; };
 		52F83E8E1FDACC21003041D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F83E8D1FDACC21003041D3 /* Assets.xcassets */; };
 		52F83E911FDACC21003041D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F83E8F1FDACC21003041D3 /* LaunchScreen.storyboard */; };
+		52F83E991FDACD93003041D3 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F83E981FDACD93003041D3 /* TodoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		527669421FDAFBE800C2CC67 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		52F47BE81FDAD09D0071C790 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		52F47BEA1FDAD1650071C790 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		52F83E831FDACC21003041D3 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F83E861FDACC21003041D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52F83E881FDACC21003041D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52F83E8B1FDACC21003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52F83E8D1FDACC21003041D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F83E901FDACC21003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F83E921FDACC21003041D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F83E981FDACD93003041D3 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 			children = (
 				52F83E851FDACC21003041D3 /* Todo */,
 				52F83E841FDACC21003041D3 /* Products */,
+				52F83E9B1FDACE54003041D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +62,23 @@
 			isa = PBXGroup;
 			children = (
 				52F83E861FDACC21003041D3 /* AppDelegate.swift */,
-				52F83E881FDACC21003041D3 /* ViewController.swift */,
+				52F47BEA1FDAD1650071C790 /* TodoTableViewController.swift */,
+				52F83E981FDACD93003041D3 /* TodoTableViewCell.swift */,
+				52F47BE81FDAD09D0071C790 /* TodoItem.swift */,
+				527669421FDAFBE800C2CC67 /* DataManager.swift */,
 				52F83E8A1FDACC21003041D3 /* Main.storyboard */,
 				52F83E8D1FDACC21003041D3 /* Assets.xcassets */,
 				52F83E8F1FDACC21003041D3 /* LaunchScreen.storyboard */,
 				52F83E921FDACC21003041D3 /* Info.plist */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		52F83E9B1FDACE54003041D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +114,14 @@
 					52F83E821FDACC21003041D3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -136,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F83E891FDACC21003041D3 /* ViewController.swift in Sources */,
+				52F83E991FDACD93003041D3 /* TodoTableViewCell.swift in Sources */,
+				527669431FDAFBE800C2CC67 /* DataManager.swift in Sources */,
+				52F47BEB1FDAD1650071C790 /* TodoTableViewController.swift in Sources */,
+				52F47BE91FDAD09D0071C790 /* TodoItem.swift in Sources */,
 				52F83E871FDACC21003041D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBWZW765RG;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.Todo;
@@ -289,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBWZW765RG;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.Todo;
