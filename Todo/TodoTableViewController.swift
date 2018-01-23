@@ -159,7 +159,9 @@ class TodoTableViewController: UITableViewController, TodoCellDelegate, MCSessio
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
+        /// just to make it work for iPads too
+        actionSheet.popoverPresentationController?.sourceView = view
+
         self.present(actionSheet, animated: true, completion: nil)
         
     }
