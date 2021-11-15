@@ -6,5 +6,6 @@ This is the 3rd part of a 5 part series to create a to-do app from start to fini
 
 [![Video](https://img.youtube.com/vi/H5c4vo6p5Fg/0.jpg)](https://www.youtube.com/watch?v=H5c4vo6p5Fg)
 
-
+My Edit:
+	- Changes made to files are made following the youtube tutorial
 
